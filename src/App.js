@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom';
 
 import { Home, Cart } from './containers';
 import { Header, Footer } from './components';
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <main>
       <div className='content'>
       {/* <div>
@@ -31,7 +31,7 @@ const App = () => (
       </div>
       <Footer/>
     </main>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
