@@ -1,6 +1,7 @@
 # react-redux-shop
 
 Simple store-front and cart app using React and Redux
+Demo: http://deepkt.github.io/react-redux-shop
 
 ## How to install
 
