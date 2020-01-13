@@ -1,0 +1,30 @@
+$placeholder-text-color: #bbbbbb;
+.search-bar{
+    &.active{
+        border-bottom: 1px solid #fff;
+    }
+    .hidden-field{
+        display: none;
+    }
+    input{
+        font-size: 16px;
+        background-color:rgba(0, 0, 0, 0);
+        color:white;
+        border: none;
+        outline:none;
+        height:30px;
+        transition:height 1s;
+        -webkit-transition:height 1s;
+        &::-webkit-input-placeholder { /* Edge */
+            color: $placeholder-text-color;
+        }
+          
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $placeholder-text-color;
+        }
+          
+        &::placeholder {
+            color: $placeholder-text-color;
+        }
+    }
+}
